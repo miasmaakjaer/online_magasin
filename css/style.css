@@ -1,0 +1,444 @@
+/* CSS reset */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Styling af logo */
+
+.logo {
+    background-color:#F4F2ED ;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+}
+
+
+.linje {
+    border: 1px solid;
+    color: #CCC5BA;
+}
+
+/* Styling af navigationsbar */
+nav {
+    height: 50px;
+}
+
+.flex-container {
+    /* padding: 20px; */
+    display: flex;  /* Change 'inline-block' to 'flex' to use flex properties */
+    justify-content: center;
+    flex-direction: row;
+    background-color: #F4F2ED;
+    z-index: 1;
+    height: 100%;
+}
+
+.flex-container li {
+    text-align: center;
+    display: inline;
+    margin-right: 50px;
+}
+
+.flex-container a {
+    text-decoration: none;
+    color: black;
+}
+
+.flex-container a:hover {
+    color: #CCC5BA;
+}
+
+.submenu {
+    display: none;
+    position: absolute;
+    background-color: #F4F2ED;
+    padding: 10px; 
+}
+
+.flex-item1:hover .submenu {
+    display: block;
+    
+}
+
+/* Styling af body */
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 400;
+    background-color: white;
+}
+/* Styling af forside */
+.image-with-text {
+    position: relative;
+    text-align: center;
+}
+
+.image-with-text img {
+    max-width: 100%; /* Sørg for, at billedet ikke overstiger forælderens bredde */
+    height: auto;
+}
+
+.text-overlay {
+    position: absolute;
+    top: 50%; /* Placer overlay i midten vertikalt */
+    left: 50%; /* Placer overlay i midten horisontalt */
+    transform: translate(-50%, -50%); /* Centrerer overlay relativt til forældreelementet */
+    color: black;
+    padding: 20px; /* Juster padding efter behov */
+}
+
+.text-overlay h2 {
+    font-size: 24px; 
+    color: grey;
+    margin: 0;
+}
+
+.text-overlay p {
+    font-size: 16px; 
+}
+
+.section_2 {
+    display: flex;
+    justify-content: center;
+}
+.section_2 img {
+    width: 500px;
+    height: 500px;
+    border-radius: 50%;
+    padding: 50px;
+}
+
+/* Styling af artikel 1/underside: Bæredygtig mad */
+
+
+
+/* Styling af section 1 */
+.section-1 {
+height: 630px;
+}
+
+/* Styling af section 2: */
+.section-2 {
+    display: flex;
+    justify-content: center;
+    margin: 50px;
+    margin-inline-end: 50px;
+    text-align: center;
+  }
+  
+  section.“section-2” {
+    text-align: center;
+
+}
+
+.section-2 ul li {
+    font-weight:  bold;
+    font-style: italic;
+}
+
+.circle {
+    width: 500px;
+    height: 500px;
+    background-color: #A4B8A9;
+    border-radius: 50%;
+    align-items: center;
+    color: black;
+    white-space: pre-wrap;
+    line-height: 1.5;
+    margin-bottom: 20px;
+    margin: auto;
+
+}
+
+  .text1, .text2 {
+    width: 50%; 
+    float: left;
+}
+
+.text2 {
+    clear: right;
+    white-space: pre-wrap;
+}
+
+.text-edit {
+    padding: 40px;
+    font-size: 12px;
+}
+
+
+/* Styling af section 3 */
+
+.section-3 {
+    display: flex;
+    justify-content: center;
+    margin: 50px;
+    margin-inline-end: 50px;
+    text-align: center;
+}
+
+
+
+/* Styling af section 4 */
+
+.section-4 {
+    display: flex;
+    justify-content: center;
+    margin: 50px;
+    margin-inline-end: 50px;
+    text-align: center;
+}
+
+
+.section-4 .madplan {
+    width: 300px; 
+    height: 300px; 
+    border-radius: 50%; 
+    overflow: hidden; 
+}
+
+.section-4 .madplan img {
+    max-width: 100%; 
+    height: auto; 
+    display: block;
+}
+
+.text1 .tgtg_logo .wefood {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    flex-direction: column; /* Læg til denne egenskab for at ændre layoutet til en kolonne */
+    margin: 50px;
+    margin-inline-end: 50px;
+}
+
+.section-4 .tgtg_logo img {
+    width: 100px;
+    border-radius: 50%;
+    margin-top: 150px;
+}
+
+.section-4 .wefood img {
+    width: 100px;
+    border-radius: 50%;
+   margin-top: 150px;
+}
+
+/* Styling af artikel 2: Bæredygtigt tøj */
+/* Create two equal columns that floats next to each other */
+main {
+    text-align: center;
+}
+
+.column {
+    float: left;
+    width: 50%;
+    padding: 150px;
+  }
+
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+
+  .column img {
+  width: 300px;
+  height: 300px;
+  border-radius: 50%;
+}
+
+.text_1, .text_2 {
+  background-color: #A4B8A9;
+  width: 400px;
+  margin-top: 100px;
+  padding:40px;
+  padding-top: 50px;
+  padding-bottom: 60px;
+}
+
+.text_2 {
+    margin-top: 158px
+}
+
+.button {
+    width: 150px;
+    height: 40px;
+    font-size: 16px;
+    border-radius: 10px;
+    margin-top: 30px;
+}
+
+/* Styling af artikel 3: Tips */
+.række1 {
+    text-align: center;
+}
+
+.række1 img {
+    width: 100%;
+}
+
+.række2{
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+
+
+
+.transport {
+    margin-right: 50px;
+}
+
+.tøj {
+    margin-right: 50px;
+}
+
+.energi {
+    margin-right: 20px;
+}
+
+.række3 {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 20px;
+}
+
+.række4 {
+    display: flex;
+    justify-content: space-around;
+}
+
+.rund-boks {
+    display: block;
+    width: 200px;
+    height: 200px;
+    background-color: #A4B8A9;
+    color: black;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 20px;
+    padding: 30px;
+    display: flex;
+    align-items: center; 
+   
+}
+
+.række5 {
+    display: flex;
+    justify-content: space-evenly;
+    margin: 0 150px;
+   
+}
+
+.række5 .billede1 {
+    width: 400px; 
+    height: 400px; 
+    border-radius: 50%; 
+    overflow: hidden; 
+  
+}
+
+.række5 .billede1 img {
+    max-width: 100%; 
+    height: auto; 
+    display: block;
+   
+}
+
+.række5 .billede2 {
+    width: 400px; 
+    height: 400px; 
+    border-radius: 50%; 
+    overflow: hidden; 
+    
+}
+
+.række5 .billede2 img {
+    max-width: 100%; 
+    height: auto; 
+    display: block;
+    
+}
+
+
+/* Styling af footer */
+
+.footer {
+    padding: 40px;
+    background-color: #F4F2ED;
+}
+
+.footer, .social {
+    text-align: center;
+    padding: 25px;
+    color: black;
+}
+
+.social a {
+    font-size: 24px;
+    /* the color property here get - gets the same color as its container - in the case .social (color: #4b4c4d) */
+    color: inherit;
+    border: 1px solid #ccc;
+    width: 40px;
+    height: 40px;
+    line-height: 38px;
+    display: inline-block;
+    text-align: center;
+    border-radius: 50%;
+    margin: 0 8px;
+    opacity: 0.75;
+
+}
+ 
+.social a:hover {
+    opacity: 0.9;
+}
+
+.footer ul {
+    margin-top: 0;
+    padding: 0;
+    list-style: none;
+    font-size: 18px;
+    line-height: 1.6;
+    margin-bottom: 0;
+}
+
+.footer ul li {
+   display: inline-block;
+   padding: 0 15px;
+}
+
+.footer ul li a {
+    color: inherit;
+    text-decoration: none;
+    opacity: 0.8;
+}
+
+.footer ul li a:hover {
+    opacity: 1;
+}
+
+.footer, .copyright {
+    margin-top: 15px;
+    text-align: center;
+    font-size: 13px;
+    color: #aaa;
+}
+
+/* Styling footer so it is always placed in bottom */
+footer.footer {
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}
+
+/* Absolute er ift. noget andet på siden */
+footer.footer {
+    position: relative;
+    width: 100%;
+    bottom: 0;
+}

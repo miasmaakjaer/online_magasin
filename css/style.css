@@ -10,7 +10,6 @@
 
 .logo {
     background-color:#F4F2ED ;
-    align-items: center;
     justify-content: center;
     display: flex;
 }
@@ -27,8 +26,7 @@ nav {
 }
 
 .flex-container {
-    /* padding: 20px; */
-    display: flex;  /* Change 'inline-block' to 'flex' to use flex properties */
+    display: flex;  
     justify-content: center;
     flex-direction: row;
     background-color: #F4F2ED;
@@ -76,17 +74,16 @@ body {
 }
 
 .image-with-text img {
-    max-width: 100%; /* Sørg for, at billedet ikke overstiger forælderens bredde */
+    max-width: 100%; 
     height: auto;
 }
 
 .text-overlay {
     position: absolute;
-    top: 50%; /* Placer overlay i midten vertikalt */
-    left: 50%; /* Placer overlay i midten horisontalt */
-    transform: translate(-50%, -50%); /* Centrerer overlay relativt til forældreelementet */
+    top: 50%; 
+    left: 50%; 
+    transform: translate(-50%, -50%); 
     color: black;
-    padding: 20px; /* Juster padding efter behov */
 }
 
 .text-overlay h2 {
@@ -112,14 +109,34 @@ body {
 
 /* Styling af artikel 1/underside: Bæredygtig mad */
 
-
-
 /* Styling af section 1 */
+
 .section-1 {
 height: 630px;
 }
 
+.imagewithtext {
+    position: relative;
+    text-align: center;
+}
+
+.imagewithtext img {
+    max-width: 100%; 
+    height: auto;
+}
+
+.text-overlay {
+    position: absolute;
+    top: 50%; 
+    left: 50%; 
+    transform: translate(-50%, -50%); 
+    color: black;
+    text-decoration: none;
+}
+
+
 /* Styling af section 2: */
+
 .section-2 {
     display: flex;
     justify-content: center;
@@ -128,7 +145,7 @@ height: 630px;
     text-align: center;
   }
   
-  section.“section-2” {
+.section.“section-2” {
     text-align: center;
 
 }
@@ -152,7 +169,7 @@ height: 630px;
 
 }
 
-  .text1, .text2 {
+.text1, .text2 {
     width: 50%; 
     float: left;
 }
@@ -190,6 +207,14 @@ height: 630px;
     text-align: center;
 }
 
+.logoer {
+    display: flex;
+    justify-content: center;
+}
+
+.logoer .tgtg_logo {
+    margin: 0 60px;
+}
 
 .section-4 .madplan {
     width: 300px; 
@@ -209,7 +234,7 @@ height: 630px;
     justify-content: center;
     align-items: center;
     text-align: center;
-    flex-direction: column; /* Læg til denne egenskab for at ændre layoutet til en kolonne */
+    flex-direction: column; 
     margin: 50px;
     margin-inline-end: 50px;
 }
@@ -227,15 +252,18 @@ height: 630px;
 }
 
 /* Styling af artikel 2: Bæredygtigt tøj */
-/* Create two equal columns that floats next to each other */
+
 main {
     text-align: center;
 }
+
 
 .column {
     float: left;
     width: 50%;
     padding: 150px;
+    line-height: 2;
+    margin-top: -70px;
   }
 
   .row:after {
@@ -244,10 +272,14 @@ main {
     clear: both;
   }
 
+  .column, p {
+    margin-bottom: 60px;
+  }
   .column img {
   width: 300px;
   height: 300px;
   border-radius: 50%;
+  margin-bottom: 60px;
 }
 
 .text_1, .text_2 {
@@ -260,14 +292,14 @@ main {
 }
 
 .text_2 {
-    margin-top: 158px
+    margin-top: 260px
 }
 
 .button {
     width: 150px;
     height: 40px;
     font-size: 16px;
-    border-radius: 10px;
+    border-radius: 10px ;
     margin-top: 30px;
 }
 
@@ -286,8 +318,6 @@ main {
     margin-bottom: 20px;
     margin-top: 20px;
 }
-
-
 
 .transport {
     margin-right: 50px;
@@ -380,7 +410,6 @@ main {
 
 .social a {
     font-size: 24px;
-    /* the color property here get - gets the same color as its container - in the case .social (color: #4b4c4d) */
     color: inherit;
     border: 1px solid #ccc;
     width: 40px;
